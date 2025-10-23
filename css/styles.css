@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+
+#app {
+  display: flex;
+}
+
+.left {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.right {
+  flex: 1;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  #app {
+    flex-direction: column; /* 縦並びに切り替え */
+  }
+  .left {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc; /* 区切り線を下に */
+  }
+  .right {
+    width: 100%;
+  }
+}

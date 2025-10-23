@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Sandbox</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Bookmark</h1>
+    <div id="app">
+      <div class="left">
+        <label for="folder-input" class="visually-hidden">フォルダ名</label>
+        <input id="folder-input" type="text" placeholder="フォルダ名" />
+        <button id="add-folder" type="button">フォルダ追加</button>
+
+        <ul id="folder-list"></ul>
+        <div id="folder-empty"></div>
+      </div>
+
+      <div class="right">
+        <div id="current-folder-name"></div>
+
+        <label for="bm-title">タイトル</label>
+        <input type="text" placeholder="タイトル" id="bm-title" />
+
+        <label for="bm-url">URL</label>
+        <input type="url" placeholder="https://...." id="bm-url" />
+
+        <label for="folder-select">保存先フォルダ</label>
+        <select id="folder-select" name="folder"></select>
+
+        <button id="add-bm-btn" type="button">ブックマークに追加</button>
+
+        <ul id="bookmark-list">
+          <li id="bm-empty">ブックマークがありません</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/index.js" type="module" defer></script>
+  </body>
+</html>
